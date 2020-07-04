@@ -5,8 +5,5 @@ RewriteCond %{HTTP_HOST} !^(.+\.)([a-zA-Z0-9-]+\.([a-z]{2,4})|co\.uk|me\.uk|org\
 RewriteCond %{HTTP_HOST} ([a-zA-Z0-9-]+\.([a-z]{2,4})|co\.uk|me\.uk|org\.uk|priv\.no)$
 RewriteRule ^(.*)$ https://www.%1/$1 [L,QSA,R=301]
 
-RewriteCond %{THE_REQUEST} /([^.]+)\.html [NC]
-RewriteRule ^ /%1 [NC,L,R]
-
-RewriteCond %{REQUEST_FILENAME}.html -f
-RewriteRule ^ %{REQUEST_URI}.html [NC,L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.html [NC,L]
