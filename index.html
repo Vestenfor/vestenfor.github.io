@@ -12,7 +12,10 @@
   }
 </style>
 <script>
-$("video[autoplay]").each(function(){ this.play(); });
+	jQuery( document ).ready(function($) {
+    $('video.mp4').click(function() {
+        this.paused ? this.play() : this.pause();
+    });
 </script> 
 
 </head>
