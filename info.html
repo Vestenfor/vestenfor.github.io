@@ -6,6 +6,69 @@
   <link rel="shortcut icon" type="image/png" href="shortcutlogo.png">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
+	<style>
+.exh-wrapper a {
+  -webkit-transition: opacity ease-in-out .3s; 
+  -moz-transition: opacity ease-in-out .3s; 
+  -o-transition: opacity ease-in-out .3s; 
+  transition: opacity ease-in-out .3s; 
+}
+.exh-wrapper a:hover {
+	opacity: 0.5; 
+}
+	
+	
+* {box-sizing: border-box}
+body
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1920px;
+  position: absolute;
+  margin: auto;
+  z-index: -1;
+}
+
+/* Next & previous buttons */
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 0%;
+  margin: 0px
+  width: auto;
+  color: rgba(0, 0, 0, 0.0);
+  height: 100%;
+  width: 100%;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 3s;
+  animation-name: fade;
+  animation-duration: 3s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+</style>
   body { 
   }
 </style>
@@ -18,18 +81,53 @@
 			<li><a href="info">info</a></li>
 		</ul>
 	</div>
+
+
+<!-- slide show kun next ved tryk hvem end på billedet eller små gennemsigte pile-->
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="bog/01.png" style="width:100%;">
+</div>
+
+<div class="mySlides fade">
+  <img src="bog/02.png.jpg" style="width:100%;">
+</div>
+
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
 	
-	<div class="container">
-		Vilje Vestenfor 
-		<br>
-		(b. 1989, Oslo) 
-		<br>
-		holds a  MFA from the Oslo National Academy of the Arts
-		<br>
-		lives and works in Oslo, Norge
-		<br>
-		<br>
-		<a class="maillink" href="mailto:Viljevestenfor@gmail.com" style="color:black";>vilje.vestenfor (a) gmail.com</a>
-	</div>
+
 
 </body>
