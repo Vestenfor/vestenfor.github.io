@@ -71,6 +71,19 @@ height:50px;
 position:fixed;
     
 
+.picturecontainer {
+  position: relative;
+  padding-top: 60px;
+  margin-left: 22vw;
+  width: 43vw;
+}
+
+.caption {
+    display: block;
+    font-size: 10px;
+    margin-top: -2px;
+    padding-bottom: 6px;
+}
 
 
 
