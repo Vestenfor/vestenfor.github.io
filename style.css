@@ -63,7 +63,7 @@ html, body {
   }
 }
 
-div#container2 {height:90vw;width:90vw;}
+div#container2 {height:100%;width:100%;}
 
 div.a {
 width: 50px;
@@ -71,10 +71,12 @@ height:50px;
 position:fixed;
     
 }
+
+
 .picturecontainer {
   position: relative;
-  padding-top: 60px;
-  margin-left: 22vw;
+  padding-top: 40px;
+  margin-left: 20vw;
   width: 43vw;
 }
 
@@ -86,6 +88,13 @@ position:fixed;
 }
 
 
+.img {
+  width: 20vw;
+}
 
+.works {
+	width:60vw;
+	padding-bottom: 0.5vw;
+}
 
 
