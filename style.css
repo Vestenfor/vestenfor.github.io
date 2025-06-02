@@ -77,7 +77,13 @@ position:fixed;
   position: relative;
   padding-top: 40px;
   margin-left: 20vw;
-  width: 43vw;
+  width: 50vw;
+}
+
+.picturecontainer2 {
+  position: relative;
+  padding-top: 40px;
+  margin-left: 20vw;
 }
 
 .caption {
@@ -97,4 +103,57 @@ position:fixed;
 	padding-bottom: 0.5vw;
 }
 
+.myDIV2:hover + .semihide {
+  display: block;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 1);
+}
+
+.semihide {
+  display: block;
+  color: rgba(0, 0, 0, 0);
+  font-size: 14px;
+  margin-left: 20px;
+}
+
+.semihide:hover {
+  display: block;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 1);
+}
+
+.img2 {
+  margin-right: 20px;
+  width: 50vw;
+  float: left;
+  padding-bottom: 12px;
+}
+
+
+.img3 {
+  padding-bottom: 12px;
+  margin-top: 6px;
+  width: 50vw;
+  margin-right: 1.5vw;
+}
+
+.myDIV3:hover + .semihide2 {
+  display: block;
+  font-size: 12px;
+  margin-top: -14px;
+  color: rgba(0, 0, 0, 1);
+}
+
+.semihide2 {
+  display: block;
+  color: rgba(0, 0, 0, 0.2);
+  font-size: 12px;
+  margin-top: -14px;
+}
+
+.semihide2:hover {
+  display: block;
+  font-size: 12px;
+  margin-top: -14px;
+  color: rgba(0, 0, 0, 1);
 
