@@ -18,6 +18,7 @@ html, body {
   left: -35px;
   top: -11px;
   position: fixed;
+  z-index: 2;
 }
 
 .menu li a { 
@@ -33,6 +34,16 @@ html, body {
   .menu:visited {
     text-decoration: none;
   }
+
+  .box {
+  left: -35px;
+  top: -11px;
+  position: fixed;
+  height: 35px;
+  width: 200%;
+  z-index: 1;
+  background-color: white;
+}
 
 .container {
   line-height: 120%; 
@@ -105,21 +116,22 @@ position:fixed;
 
 .myDIV2:hover + .semihide {
   display: block;
-  font-size: 14px;
+  font-size: 12px;
   color: rgba(0, 0, 0, 1);
 }
 
 .semihide {
   display: block;
-  color: rgba(0, 0, 0, 0);
-  font-size: 14px;
+  color: rgba(0, 0, 0, 0.3);
+  font-size: 12px;
   margin-left: 20px;
 }
 
 .semihide:hover {
   display: block;
-  font-size: 14px;
+  font-size: 12px;
   color: rgba(0, 0, 0, 1);
+  margin-left: 20px;
 }
 
 .img2 {
@@ -149,6 +161,7 @@ position:fixed;
   color: rgba(0, 0, 0, 0.2);
   font-size: 12px;
   margin-top: -14px;
+
 }
 
 .semihide2:hover {
@@ -156,4 +169,5 @@ position:fixed;
   font-size: 12px;
   margin-top: -14px;
   color: rgba(0, 0, 0, 1);
+}
 
